@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRAFTSVILLA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images//favicon-16x16.png"
+    />
+    <link rel="manifest" href="images//site.webmanifest" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__body">
+        <a href="/" class="logo header__logo">
+          <span class="logo__title"
+            >CRAFTS<span class="logo__title-accent">VILLA</span></span
+          >
+          <span class="logo__subtitle">Kreativt verksted</span>
+        </a>
+        <nav class="nav header__nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="home.html" class="menu__link menu__link--active">Hjem</a>
+            </li>
+            <li class="menu__item">
+              <a href="home.html#about" class="menu__link">Om oss</a>
+            </li>
+            <li class="menu__item">
+              <a href="home.html#workshops" class="menu__link">Workshops</a>
+            </li>
+            <li class="menu__item">
+              <a href="home.html#gallery" class="menu__link">Galleri</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="booking.html" class="button button--primary button--header"
+            >Bestill workshop</a
+          >
+          <button class="header__burger" aria-label="Åpne meny">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="44"
+                height="44"
+                rx="5"
+                fill="#047857"
+                fill-opacity="0.08"
+              />
+              <path
+                d="M7.68421 10C7.23753 10 6.80914 10.1806 6.49329 10.5021C6.17744 10.8235 6 11.2595 6 11.7142C6 12.1688 6.17744 12.6048 6.49329 12.9263C6.80914 13.2477 7.23753 13.4283 7.68421 13.4283H36.3158C36.7625 13.4283 37.1909 13.2477 37.5067 12.9263C37.8226 12.6048 38 12.1688 38 11.7142C38 11.2595 37.8226 10.8235 37.5067 10.5021C37.1909 10.1806 36.7625 10 36.3158 10H7.68421ZM6 21.9991C6 21.5445 6.17744 21.1085 6.49329 20.787C6.80914 20.4656 7.23753 20.285 7.68421 20.285H36.3158C36.7625 20.285 37.1909 20.4656 37.5067 20.787C37.8226 21.1085 38 21.5445 38 21.9991C38 22.4538 37.8226 22.8898 37.5067 23.2112C37.1909 23.5327 36.7625 23.7133 36.3158 23.7133H7.68421C7.23753 23.7133 6.80914 23.5327 6.49329 23.2112C6.17744 22.8898 6 22.4538 6 21.9991ZM6 32.2858C6 31.8312 6.17744 31.3952 6.49329 31.0737C6.80914 30.7523 7.23753 30.5717 7.68421 30.5717H36.3158C36.7625 30.5717 37.1909 30.7523 37.5067 31.0737C37.8226 31.3952 38 31.8312 38 32.2858C38 32.7405 37.8226 33.1765 37.5067 33.4979C37.1909 33.8194 36.7625 34 36.3158 34H7.68421C7.23753 34 6.80914 33.8194 6.49329 33.4979C6.17744 33.1765 6 32.7405 6 32.2858Z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                fill="#047857"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="booking">
+      <div class="booking__container container">
+        <div class="booking__grid">
+          <div class="booking__left-column">
+            <div class="booking__header">
+              <h1 class="booking__title">Bli med på workshop</h1>
+              <p class="booking__subtitle">
+                Fyll ut informasjonen under for å reservere din plass.
+              </p>
+            </div>
+            <div class="booking__card">
+              <form action="#" method="POST" class="booking__form">
+                <div class="booking__row">
+                  <div class="booking__field">
+                    <label for="name" class="booking__label"
+                      >Fullt navn *</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="booking__input"
+                      placeholder="John Carter"
+                      required
+                    />
+                  </div>
+                  <div class="booking__field">
+                    <label for="email" class="booking__label"
+                      >E-postadresse *</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="booking__input"
+                      placeholder="example@email.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="booking__row">
+                  <div class="booking__field">
+                    <label for="phone" class="booking__label"
+                      >Telefonnummer *</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="booking__input"
+                      placeholder="+47 000 00 000"
+                      required
+                    />
+                  </div>
+                  <div class="booking__field">
+                    <label for="workshop" class="booking__label"
+                      >Velg workshop *</label
+                    >
+                    <select
+                      id="workshop"
+                      name="workshop"
+                      class="booking__select"
+                      required
+                    >
+                      <option value="" disabled selected>
+                        Velg en workshop
+                      </option>
+                      <option value="mosaikkunst">Mosaikkunst (400 kr)</option>
+                      <option value="keramikk">
+                        Keramikk & Formgiving (500 kr)
+                      </option>
+                      <option value="maleri">Akrylmaling (450 kr)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="booking__row">
+                  <div class="booking__field">
+                    <label for="date" class="booking__label"
+                      >Ønsket dato *</label
+                    >
+                    <input
+                      type="date"
+                      id="date"
+                      name="date"
+                      class="booking__input"
+                      lang="no"
+                      required
+                      placeholder="DD.MM.ÅÅÅÅ"
+                    />
+                  </div>
+                  <div class="booking__field">
+                    <label for="attendees" class="booking__label"
+                      >Antall deltakere *</label
+                    >
+                    <input
+                      type="number"
+                      id="attendees"
+                      name="attendees"
+                      class="booking__input"
+                      min="1"
+                      max="20"
+                      value="1"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="button button--primary booking__submit"
+                >
+                  Send bestilling
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="booking__right-column contacts-info">
+            <div class="contacts-info__header">
+              <h2 class="contacts-info__title">Har du spørsmål?</h2>
+              <p class="contacts-info__subtitle">
+                Ta gjerne kontakt med oss direkte, så hjelper vi deg gjerne.
+              </p>
+            </div>
+
+            <ul class="contacts-info__list">
+              <li class="contacts-info__item">
+                <svg
+                  class="contacts-info__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span class="contacts-info__value">Storgata 12, Oslo</span>
+              </li>
+
+              <li class="contacts-info__item">
+                <svg
+                  class="contacts-info__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <a href="tel:+4711111111" class="contacts-info__link"
+                  >+47 111 11 111</a
+                >
+              </li>
+
+              <li class="contacts-info__item">
+                <svg
+                  class="contacts-info__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a href="mailto:post@craftsvilla.no" class="contacts-info__link"
+                  >post@craftsvilla.no</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a href="/" class="logo footer__logo">
+            <span class="logo__title"
+              >CRAFTS<span class="logo__title-accent">VILLA</span></span
+            >
+            <span class="logo__subtitle">Kreativt verksted</span>
+          </a>
+
+          <nav class="nav footer__nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="home.html" class="menu__link menu__link--active"
+                  >Hjem</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="home.html#about" class="menu__link">Om oss</a>
+              </li>
+              <li class="menu__item">
+                <a href="home.html#workshops" class="menu__link">Workshops</a>
+              </li>
+              <li class="menu__item">
+                <a href="home.html#gallery" class="menu__link">Galleri</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            Copyright © 2026 CRAFTSVILLA | Med enerett
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

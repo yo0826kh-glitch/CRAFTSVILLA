@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRAFTSVILLA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images//favicon-16x16.png"
+    />
+    <link rel="manifest" href="images//site.webmanifest" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__body">
+        <a href="/" class="logo header__logo">
+          <span class="logo__title"
+            >CRAFTS<span class="logo__title-accent">VILLA</span></span
+          >
+          <span class="logo__subtitle">Kreativt verksted</span>
+        </a>
+        <nav class="nav header__nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link--active">Hjem</a>
+            </li>
+            <li class="menu__item">
+              <a href="#about" class="menu__link">Om oss</a>
+            </li>
+            <li class="menu__item">
+              <a href="#workshops" class="menu__link">Workshops</a>
+            </li>
+            <li class="menu__item">
+              <a href="#gallery" class="menu__link">Galleri</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="booking.html" class="button button--primary button--header"
+            >Bestill workshop</a
+          >
+          <button class="header__burger" aria-label="Åpne meny">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="44"
+                height="44"
+                rx="5"
+                fill="#047857"
+                fill-opacity="0.08"
+              />
+              <path
+                d="M7.68421 10C7.23753 10 6.80914 10.1806 6.49329 10.5021C6.17744 10.8235 6 11.2595 6 11.7142C6 12.1688 6.17744 12.6048 6.49329 12.9263C6.80914 13.2477 7.23753 13.4283 7.68421 13.4283H36.3158C36.7625 13.4283 37.1909 13.2477 37.5067 12.9263C37.8226 12.6048 38 12.1688 38 11.7142C38 11.2595 37.8226 10.8235 37.5067 10.5021C37.1909 10.1806 36.7625 10 36.3158 10H7.68421ZM6 21.9991C6 21.5445 6.17744 21.1085 6.49329 20.787C6.80914 20.4656 7.23753 20.285 7.68421 20.285H36.3158C36.7625 20.285 37.1909 20.4656 37.5067 20.787C37.8226 21.1085 38 21.5445 38 21.9991C38 22.4538 37.8226 22.8898 37.5067 23.2112C37.1909 23.5327 36.7625 23.7133 36.3158 23.7133H7.68421C7.23753 23.7133 6.80914 23.5327 6.49329 23.2112C6.17744 22.8898 6 22.4538 6 21.9991ZM6 32.2858C6 31.8312 6.17744 31.3952 6.49329 31.0737C6.80914 30.7523 7.23753 30.5717 7.68421 30.5717H36.3158C36.7625 30.5717 37.1909 30.7523 37.5067 31.0737C37.8226 31.3952 38 31.8312 38 32.2858C38 32.7405 37.8226 33.1765 37.5067 33.4979C37.1909 33.8194 36.7625 34 36.3158 34H7.68421C7.23753 34 6.80914 33.8194 6.49329 33.4979C6.17744 33.1765 6 32.7405 6 32.2858Z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                fill="#047857"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="home">
+      <section class="hero hero--video">
+        <div class="hero__video-wrap">
+          <video class="hero__video" autoplay muted loop playsinline poster="">
+            <source src="hero-video.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+        </div>
+
+        <div class="container">
+          <div class="hero__content">
+            <span class="hero__badge">Kreative workshops & aktiviteter</span>
+            <h1 class="hero__title">
+              Slipp løs kreativiteten din. <br />
+              <span class="hero__title-highlight">Koble til. Slapp av.</span>
+            </h1>
+            <p class="hero__description">
+              Et innbydende rom hvor foreldre, barn, venner og kolleger kan nyte
+              kvalitetstid, lage kunst og utforske skapergleden sammen.
+            </p>
+            <div class="hero__actions">
+              <a href="booking.html" class="button button--primary"
+                >Bestill workshop</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Kreativitet for alle</h2>
+            <p class="section__description">
+              Hos CRAFTSVILLA bringer vi mennesker sammen gjennom kreativitet.
+              Enten det er foreldre som knytter bånd med barn, venner som
+              utforsker nye hobbyer eller kolleger som finner avslapning etter
+              jobb – vi tilbyr gledelige, guidede kunstopplevelser for alle.
+            </p>
+          </div>
+
+          <div class="features">
+            <svg
+              class="features__line"
+              viewBox="0 0 1000 120"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M 125 60 C 200 120, 300 120, 375 60 C 450 0, 550 0, 625 60 C 700 120, 800 120, 875 60"
+                stroke="#94a3b8"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                fill="none"
+              />
+            </svg>
+            <div class="features__item">
+              <div class="features__icon-box">
+                <svg
+                  class="features__icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.26503 6.40791C9.08796 6.35968 9.91312 6.36369 10.7355 6.41991C11.7915 6.50241 13.0725 6.72591 13.923 7.40991C15.0885 8.28891 15.681 9.64041 15.804 10.9709C15.9045 12.0387 15.7072 13.1134 15.234 14.0759C15.774 14.7809 16.2345 15.6449 16.623 16.5209C17.154 17.7179 17.5995 19.0514 17.961 20.2874C18.1065 19.8524 18.273 19.4144 18.459 18.9914C18.738 18.3554 19.08 17.7194 19.4985 17.1569C18.5535 15.1739 19.266 12.7799 21.0285 11.5064C21.783 10.9274 22.86 10.7324 23.7345 10.6559C24.6459 10.5884 25.561 10.5904 26.472 10.6619L26.7465 10.6979C27.999 10.9274 28.827 12.0704 28.752 13.3124L28.722 13.5794C28.5793 14.4909 28.3666 15.39 28.086 16.2689C27.801 17.1239 27.351 18.1529 26.601 18.7514C24.9855 20.1224 22.662 20.0324 21.021 18.9164C20.846 19.2064 20.6785 19.5334 20.5185 19.8974C20.1781 20.6993 19.9018 21.5269 19.692 22.3724C19.5451 22.9577 19.4191 23.5481 19.314 24.1424C22.938 24.2474 26.436 25.4624 29.664 26.8109L31.2 27.4694L31.302 27.5204C31.544 27.6573 31.7267 27.879 31.8149 28.1426C31.9031 28.4063 31.8906 28.6933 31.7797 28.9482C31.6688 29.2032 31.4674 29.4081 31.2144 29.5233C30.9614 29.6386 30.6747 29.6561 30.4095 29.5724L30.3 29.5319L28.7775 28.8794C25.473 27.4994 22.1625 26.3819 18.8295 26.3804L18.0585 26.4014H17.9415C13.8345 26.1854 9.76353 27.7619 5.70003 29.5319C5.42653 29.6513 5.11682 29.6571 4.83903 29.5481C4.56124 29.4391 4.33813 29.2242 4.21878 28.9507C4.09944 28.6772 4.09363 28.3674 4.20263 28.0896C4.31164 27.8119 4.52653 27.5888 4.80003 27.4694C8.42253 25.8914 12.438 24.2804 16.62 24.1454C16.3878 23.0827 16.1217 22.0276 15.822 20.9819C15.4821 19.773 15.0627 18.588 14.5665 17.4344C14.3286 16.888 14.0504 16.36 13.734 15.8549C11.892 17.1749 9.38403 16.8779 7.66353 15.3554C6.84303 14.6729 6.34353 13.5014 6.02403 12.5039C5.77448 11.7094 5.57607 10.8998 5.43003 10.0799L5.31003 9.37041C5.08503 7.94541 6.06903 6.57741 7.55703 6.45741L8.26503 6.40791Z"
+                    fill="#1C4D3E"
+                  />
+                </svg>
+              </div>
+              <p class="features__text">Ingen tidligere erfaring nødvendig</p>
+            </div>
+            <div class="features__item">
+              <div class="features__icon-box">
+                <svg
+                  class="features__icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.6333 25.3006C16.9734 23.9714 14.2818 23.9714 12.6219 25.3006C10.9637 26.6304 10.9637 28.7853 12.6219 30.1151C14.2813 31.4448 16.9728 31.4448 18.6333 30.1151C20.2922 28.7853 20.2922 26.6304 18.6333 25.3006ZM12.2546 23.3831C13.541 21.785 13.1057 19.7662 11.2832 18.8752C9.46065 17.9842 6.94065 18.5579 5.65422 20.156C4.36947 21.7541 4.80372 23.7729 6.62565 24.6639C8.44928 25.5554 10.9693 24.9817 12.2546 23.3831ZM10.5092 15.7601C11.7405 14.3842 11.4429 12.5465 9.84372 11.6555C8.24509 10.7639 5.95178 11.1566 4.7199 12.5324C3.48803 13.9083 3.78615 15.7454 5.38478 16.6364C6.9834 17.5274 9.27784 17.1354 10.5092 15.7601ZM11.6437 10.8607C13.1726 11.7506 15.395 11.4119 16.6067 10.1064C17.8188 8.80024 17.5629 7.02105 16.0346 6.13174C14.5063 5.24187 12.2838 5.57993 11.0722 6.88549C9.85947 8.19162 10.1154 9.97081 11.6437 10.8607ZM24.5508 8.58987C25.9121 7.89405 26.0634 6.52718 24.8883 5.53549C23.7144 4.5438 21.6562 4.30362 20.2944 4.99887C18.932 5.69412 18.7813 7.06156 19.9563 8.05324C21.1314 9.04493 23.1896 9.28512 24.5508 8.58987Z"
+                    fill="#1C4D3E"
+                  />
+                  <path
+                    d="M29.5172 18.6744C28.2999 18.3167 27.2497 18.0073 26.9612 17.2913C26.7941 16.8761 26.8593 16.2664 27.1428 15.4794C30.1612 12.6557 34.677 8.10563 34.5498 6.25669C34.4992 5.51756 33.3213 4.45894 32.549 4.45894L32.4883 4.46119C31.6524 4.51856 30.375 5.62444 29.0103 7.12181C28.8961 6.77826 28.749 6.44653 28.571 6.13125C27.1395 3.66469 23.9923 2.25 19.9372 2.25C16.7844 2.25 13.2738 3.11906 9.7869 4.76325C5.31109 6.87375 1.96815 11.2748 1.27065 15.9761C0.752029 19.467 1.3719 24.7466 7.26578 30.0808C9.87915 32.4473 13.9944 33.75 18.8516 33.75H18.8533C22.7525 33.75 26.703 32.8821 29.6932 31.3706C33.035 29.6803 34.875 27.3426 34.875 24.7871C34.875 20.25 31.7778 19.3393 29.5172 18.6744ZM32.549 5.30269C32.904 5.30269 33.6892 6.03956 33.7078 6.31406C33.8152 7.8795 28.2386 13.428 24.5109 16.7366L23.8753 16.1837L23.4596 15.8209C26.2338 11.682 30.978 5.40956 32.549 5.30269ZM22.0871 17.4712L22.9432 16.4897L23.9169 17.3391L23.0625 18.3201L22.0871 17.4712ZM29.1858 30.366C26.3475 31.8015 22.5821 32.625 18.8533 32.625H18.8522C14.2734 32.625 10.427 31.4252 8.02065 29.2466C2.49465 24.2466 1.90459 19.3601 2.38215 16.1409C3.02678 11.8018 6.12165 7.7355 10.2678 5.78081C13.6052 4.20694 16.9492 3.375 19.9372 3.375C23.5277 3.375 26.3908 4.61644 27.5973 6.696C27.8572 7.14319 28.0316 7.62131 28.1328 8.12194C25.614 11.0936 23.0557 14.9018 22.5669 15.6364L21.0048 17.4274C20.1847 17.4189 19.3635 17.7773 19.1103 18.6429C18.1777 21.8239 16.1004 23.7966 16.1004 23.7966C16.1004 23.7966 21.366 22.7559 22.3734 21.5736C22.919 20.9334 23.1834 20.1684 23.1772 19.4709L24.813 17.5956C25.0312 17.4038 25.3558 17.1152 25.7557 16.7541C25.7535 17.1051 25.8018 17.4257 25.9166 17.7114C26.4088 18.9332 27.7638 19.3314 29.1988 19.7533C31.4358 20.4114 33.7494 21.0915 33.7494 24.7871C33.75 26.8965 32.1283 28.8776 29.1858 30.366Z"
+                    fill="#1C4D3E"
+                  />
+                  <path
+                    d="M30.4431 22.3914C28.7837 21.0622 26.0916 21.0622 24.4322 22.3914C22.7728 23.7206 22.7734 25.8761 24.4322 27.2059C26.091 28.5356 28.7831 28.535 30.4431 27.2059C32.103 25.8767 32.1024 23.7206 30.4431 22.3914ZM29.6257 26.5505C28.4181 27.5186 26.4572 27.5186 25.2501 26.5505C24.0429 25.5825 24.0424 24.0137 25.2501 23.0462C26.4577 22.0787 28.4181 22.0781 29.6257 23.0462C30.8334 24.0142 30.8334 25.5825 29.6257 26.5505Z"
+                    fill="#1C4D3E"
+                  />
+                </svg>
+              </div>
+              <p class="features__text">Alt materiale inkludert</p>
+            </div>
+            <div class="features__item">
+              <div class="features__icon-box">
+                <svg
+                  class="features__icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.1795 10.1318C20.1793 11.7249 19.5463 13.2527 18.4197 14.3792C17.2931 15.5057 15.7652 16.1385 14.172 16.1385C13.3831 16.1387 12.6019 15.9835 11.8729 15.6818C11.144 15.3801 10.4816 14.9377 9.92364 14.38C9.36565 13.8223 8.92298 13.1601 8.62089 12.4314C8.3188 11.7026 8.16322 10.9214 8.16302 10.1325V10.1318C8.16322 8.53859 8.79624 7.01075 9.92284 5.88429C11.0494 4.75783 12.5774 4.125 14.1705 4.125C14.9595 4.1248 15.7408 4.28002 16.4698 4.58179C17.1988 4.88356 17.8612 5.32597 18.4192 5.88376C18.9772 6.44155 19.4198 7.10379 19.7219 7.83266C20.0239 8.56154 20.1794 9.34277 20.1795 10.1318ZM24.5138 30.7065C24.4913 31.2188 23.9228 31.4047 23.1983 31.506C18.486 32.16 10.1333 31.956 7.86827 30.8032C3.80327 28.7347 3.98102 24.5648 6.80102 21.3382C9.40352 18.3623 13.296 17.5388 16.866 18.267C20.3235 18.9735 24.7995 24.1545 24.5138 30.7065Z"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="#1C4D3E"
+                  />
+                  <path
+                    d="M22.6126 22.9725C24.5851 21.9653 27.9669 21.9923 29.8404 23.8575C31.8016 25.8083 31.5241 27.9128 30.2439 29.4375C29.2089 30.6713 25.5991 31.4198 23.9214 31.3448M29.5951 16.5863C29.5951 17.5995 29.1926 18.5713 28.4761 19.2878C27.7596 20.0042 26.7879 20.4068 25.7746 20.4068C24.7613 20.4068 23.7896 20.0042 23.0731 19.2878C22.3566 18.5713 21.9541 17.5995 21.9541 16.5863C21.9541 15.5729 22.3567 14.601 23.0732 13.8845C23.7898 13.1679 24.7616 12.7654 25.775 12.7654C26.7883 12.7654 27.7602 13.1679 28.4767 13.8845C29.1933 14.601 29.5951 15.5729 29.5951 16.5863Z"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="#1C4D3E"
+                  />
+                </svg>
+              </div>
+              <p class="features__text">For alle aldre</p>
+            </div>
+            <div class="features__item">
+              <div class="features__icon-box">
+                <svg
+                  class="features__icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M30 15V12C30 11.2044 29.6839 10.4413 29.1213 9.87868C28.5587 9.31607 27.7956 9 27 9H6C5.20435 9 4.44129 9.31607 3.87868 9.87868C3.31607 10.4413 3 11.2044 3 12V24C3 24.7956 3.31607 25.5587 3.87868 26.1213C4.44129 26.6839 5.20435 27 6 27H27C27.7956 27 28.5587 26.6839 29.1213 26.1213C29.6839 25.5587 30 24.7956 30 24V21H33V15H30ZM13.5 25.5L16.5 19.665L10.5 18L19.5 10.5L18 16.335L24 18L13.5 25.5Z"
+                    fill="#1C4D3E"
+                  />
+                </svg>
+              </div>
+              <p class="features__text">Slapp av og lad opp batteriene</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="workshops" id="workshops">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Våre populære verksteder</h2>
+            <p class="section__description">
+              Finn roen og slipp fantasien løs på våre workshops. Et sted for
+              lave skuldre, fellesskap og kreativ utfoldelse for folk i alle
+              aldre. Bestill din plass i dag!
+            </p>
+          </div>
+
+          <div class="workshops__grid">
+            <article
+              class="workshop-card"
+              style="
+                background-image: url(images/colorful-mosaic-tile-pattern.jpg);
+              "
+            >
+              <div class="workshop-card__top">
+                <h3 class="workshop-card__title">Mosaikkunst</h3>
+              </div>
+
+              <div class="workshop-card__bottom">
+                <div class="workshop-card__info">
+                  <span class="workshop-card__label">Sett inkluderer:</span>
+                  <p class="workshop-card__text">
+                    Ramme, A4 størrelse treplate, små fargede steiner, gummi.
+                  </p>
+                </div>
+
+                <div class="workshop-card__actions">
+                  <span class="workshop-card__price">400 kr</span>
+                  <a
+                    href="booking.html"
+                    class="button button--primary workshop-card__btn"
+                    >Bestill nå</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="workshop-card"
+              style="background-image: url(images/pexels-daka-29279336.jpg)"
+            >
+              <div class="workshop-card__top">
+                <h3 class="workshop-card__title">Akvarellmaling</h3>
+              </div>
+
+              <div class="workshop-card__bottom">
+                <div class="workshop-card__info">
+                  <span class="workshop-card__label">Sett inkluderer:</span>
+                  <p class="workshop-card__text">
+                    Akvarellpapir, penselsett, profesjonell maling, palett.
+                  </p>
+                </div>
+
+                <div class="workshop-card__actions">
+                  <span class="workshop-card__price">200 kr</span>
+                  <a
+                    href="booking.html"
+                    class="button button--primary workshop-card__btn"
+                    >Bestill nå</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="workshop-card"
+              style="
+                background-image: url(images/hiroyuki-sen-zKG7HGaH5JM-unsplash.jpg);
+              "
+            >
+              <div class="workshop-card__top">
+                <h3 class="workshop-card__title">Lerretsmaling</h3>
+              </div>
+
+              <div class="workshop-card__bottom">
+                <div class="workshop-card__info">
+                  <span class="workshop-card__label">Sett inkluderer:</span>
+                  <p class="workshop-card__text">
+                    Stort lerretslerret, akrylmaling, palettkniv, pensler.
+                  </p>
+                </div>
+
+                <div class="workshop-card__actions">
+                  <span class="workshop-card__price">300 kr</span>
+                  <a
+                    href="booking.html"
+                    class="button button--primary workshop-card__btn"
+                    >Bestill nå</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Stemningsglimt og skaperglede</h2>
+            <p class="section__description">
+              Opplev atmosfæren fra våre verksteder. Gå på oppdagelsesferd i et
+              galleri fylt med ekte magi, unike kunstverk og gylne øyeblikk der
+              generasjoner møtes for å senke skuldrene.
+            </p>
+          </div>
+
+          <div class="gallery__grid">
+            <div class="gallery__item">
+              <img
+                src="images/gallery1.jpg"
+                alt="Venner og deltakere som sitter på gulvet og maler sammen i et lunt studio"
+                class="gallery__img"
+              />
+            </div>
+
+            <div class="gallery__item">
+              <img
+                src="images/gallery2.jpg"
+                alt="Smilende mannlig deltaker som holder pensel i kunstverkstedet"
+                class="gallery__img"
+              />
+            </div>
+
+            <div class="gallery__item">
+              <img
+                src="images/gallery3.jpg"
+                alt="Kvinne som maler på lerret utendørs om våren"
+                class="gallery__img"
+              />
+            </div>
+
+            <div class="gallery__item">
+              <img
+                src="images/gallery4.jpg"
+                alt="Fokusert deltaker som nyter stemningen under en kunstworkshop"
+                class="gallery__img"
+              />
+            </div>
+
+            <div class="gallery__item">
+              <img
+                src="images/gallery5.jpg"
+                alt="Deltaker som arbeider med fargerik lerretsmaling på atelieret"
+                class="gallery__img"
+              />
+            </div>
+
+            <div class="gallery__item">
+              <img
+                src="images/gallery6.jpg"
+                alt="Kreativ atmosfære med mennesker som skaper kunst i verkstedet"
+                class="gallery__img"
+              />
+            </div>
+          </div>
+
+          <div class="gallery__actions">
+            <a href="#" class="button button--secondary">Vis mer</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a href="/" class="logo footer__logo">
+            <span class="logo__title"
+              >CRAFTS<span class="logo__title-accent">VILLA</span></span
+            >
+            <span class="logo__subtitle">Kreativt verksted</span>
+          </a>
+
+          <nav class="nav footer__nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">Hjem</a>
+              </li>
+              <li class="menu__item">
+                <a href="#about" class="menu__link">Om oss</a>
+              </li>
+              <li class="menu__item">
+                <a href="#workshops" class="menu__link">Workshops</a>
+              </li>
+              <li class="menu__item">
+                <a href="#gallery" class="menu__link">Galleri</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            Copyright © 2026 CRAFTSVILLA | Med enerett
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
